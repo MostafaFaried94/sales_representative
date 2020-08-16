@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".CustomersMapActivity">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="579dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp" />
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="402dp"
+        android:layout_height="164dp"
+        android:layout_above="@+id/customer_call_cab_button"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="9dp"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_driver"
+            app:civ_border_color="#c880ff"
+            app:civ_border_width="2dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="261dp"
+            android:layout_marginRight="261dp"
+            android:padding="3dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/name_driver"
+            android:layout_width="228dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="57dp"
+            android:layout_marginRight="57dp"
+            android:text="Driver Name"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phone_driver"
+            android:layout_width="228dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/name_driver"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="59dp"
+            android:layout_marginRight="59dp"
+            android:text="Driver Phone Number"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/car_name_driver"
+            android:layout_width="228dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/phone_driver"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginRight="58dp"
+            android:text="Driver Car Name"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/phone"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/customer_logout_btn"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/logout"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/customer_settings_btn"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/settings"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/customer_call_cab_button"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/call_a_car"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
